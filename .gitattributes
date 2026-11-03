@@ -1,0 +1,8 @@
+# Fins de ligne Unix (LF) obligatoires pour les scripts : un fichier enregistré avec des
+# fins de ligne Windows (CRLF) ne s'exécute pas sous Linux ("bad interpreter").
+* text=auto
+*.sh text eol=lf
+*.env text eol=lf
+*.yml text eol=lf
+*.py text eol=lf
+Dockerfile text eol=lf

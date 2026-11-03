@@ -1,0 +1,5 @@
+# Fichiers générés : images (plusieurs centaines de Mo), clés SSH privées, résultats bruts
+work/
+results/
+loadgen/monitoring/prometheus.generated.yml
+__pycache__/

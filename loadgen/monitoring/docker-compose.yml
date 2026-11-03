@@ -1,0 +1,23 @@
+# Supervision côté MACHINE DE CHARGE : Prometheus (collecte) et Grafana (tableaux de bord).
+# Elle interroge cAdvisor (port 18080) et node_exporter (port 9100) de la cible.
+# Le fichier prometheus.generated.yml est produit par loadgen/monitoring.sh à partir de TARGET_HOST.
+services:
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    container_name: bench-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.generated.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus-data:/prometheus
+  grafana:
+    image: grafana/grafana:11.1.0
+    container_name: bench-grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - grafana-data:/var/lib/grafana
+volumes:
+  prometheus-data:
+  grafana-data:
