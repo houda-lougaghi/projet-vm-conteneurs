@@ -1,0 +1,9 @@
+date : 2026-11-10T19:03:25+00:00
+commit : 2357ac9
+scénarios : s1 ; environnements : vm docker ; mode court : 0
+machine de charge : Linux 7.0.0-43-generic #43-Ubuntu SMP PREEMPT_DYNAMIC Fri Oct 23 13:25:25 UTC 2026 x86_64
+wrk debian/4.1.0-4build3 [epoll] Copyright (C) 2012 Will Glozer
+This is ApacheBench, Version 2.3 <$Revision: 1923142 $>
+iperf 3.20 (cJSON 1.7.15)
+jq-1.8.1
+wrk2 : /usr/local/bin/wrk2

@@ -1,0 +1,6 @@
+scenario,profile,level,metric,unit,vm_mean,vm_ci95,docker_mean,docker_ci95,diff_abs_docker_minus_vm,diff_pct_vs_vm,n_vm,n_docker,verdict
+s1,A,1,redeploy_s,s,10.6757,0.2138918861022082,0.3811,0.006138967799231403,-10.2946,-96.43021066534278,10,10,IC disjoints : différence statistiquement significative
+s1,A,1,start_cold_s,s,7.615399999999999,0.14980186913333213,0.40230000000000005,0.002677496360408349,-7.213099999999999,-94.71728339942747,10,10,IC disjoints : différence statistiquement significative
+s1,A,1,start_warm_s,s,7.400499999999999,0.22070115804906856,0.1563,0.002740455502284248,-7.244199999999999,-97.88798054185528,10,10,IC disjoints : différence statistiquement significative
+s1,A,1,stop_cold_s,s,3.8350999999999997,0.03509859876462307,0.1789,0.007520748422863246,-3.6561999999999997,-95.33519334567546,10,10,IC disjoints : différence statistiquement significative
+s1,A,1,stop_warm_s,s,3.8575000000000004,0.040937756296602304,0.1741,0.00490331945114735,-3.6834000000000002,-95.48671419313027,10,10,IC disjoints : différence statistiquement significative
