@@ -1,0 +1,12 @@
+stress-ng: info:  [114] setting to a 30 secs run per stressor
+stress-ng: info:  [114] dispatching hogs: 1 cpu, 1 vm
+stress-ng: info:  [114] note: /proc/sys/kernel/sched_autogroup_enabled is 1 and this can impact scheduling throughput for processes not attached to a tty. Setting this to 0 may improve performance metrics
+stress-ng: metrc: [114] stressor       bogo ops real time  usr time  sys time   bogo ops/s     bogo ops/s
+stress-ng: metrc: [114]                           (secs)    (secs)    (secs)   (real time) (usr+sys time)
+stress-ng: metrc: [114] cpu               16457     30.01     14.58      0.01       548.46        1128.36
+stress-ng: metrc: [114] vm               705340     30.06     12.57      2.58     23467.06       46535.50
+stress-ng: info:  [114] skipped: 0
+stress-ng: info:  [114] passed: 2: cpu (1) vm (1)
+stress-ng: info:  [114] failed: 0
+stress-ng: info:  [114] metrics untrustworthy: 0
+stress-ng: info:  [114] successful run completed in 30.06 secs

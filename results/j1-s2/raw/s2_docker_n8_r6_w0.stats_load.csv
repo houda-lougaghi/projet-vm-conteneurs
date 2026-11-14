@@ -1,0 +1,8 @@
+docker,bench-ctr-1,1308.11,295,264
+docker,bench-ctr-2,946.58,276,264
+docker,bench-ctr-3,586.11,276,264
+docker,bench-ctr-4,585.80,84,76
+docker,bench-ctr-5,223.52,276,251
+docker,bench-ctr-6,222.64,276,264
+docker,bench-ctr-7,223.63,276,227
+docker,bench-ctr-8,222.79,20,8
