@@ -1,0 +1,11 @@
+scenario,profile,level,metric,unit,vm_mean,vm_ci95,docker_mean,docker_ci95,diff_abs_docker_minus_vm,diff_pct_vs_vm,n_vm,n_docker,verdict
+s5,A,1,ab_failed_requests,count,0.0,0.0,0.0,0.0,0.0,,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,ab_p50_ms,ms,24.1,1.236651947800997,23.5,0.6078942342217106,-0.6000000000000014,-2.4896265560166033,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,ab_p90_ms,ms,34.3,2.9405999999999994,30.7,2.4327456833791734,-3.599999999999998,-10.495626822157428,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,ab_p95_ms,ms,36.6,2.9241204899935296,32.7,2.263256317786388,-3.8999999999999986,-10.65573770491803,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,ab_p99_ms,ms,41.4,3.375360816268388,38.3,3.14608702358978,-3.1000000000000014,-7.487922705314013,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,ab_rps,req/s,2695.72,166.524639811661,2816.1279999999997,158.51200114806176,120.4079999999999,4.46663600077159,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,sat_p50_ms,ms,5.337999999999999,0.009417456981584702,5.331,0.007871991107718386,-0.006999999999998785,-0.13113525665040812,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,sat_p90_ms,ms,6.226999999999999,0.7164591160115138,6.016,0.39738303716187995,-0.2109999999999994,-3.3884695680102688,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,sat_p99_ms,ms,11.599,2.333196805673281,11.841000000000001,1.3799207356670886,0.24200000000000088,2.0863867574791004,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s5,A,1,sat_rps,req/s,23113.586000000003,253.19293219738077,22994.134,328.6611912083241,-119.45200000000477,-0.5168042726040206,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire

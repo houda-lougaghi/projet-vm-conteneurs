@@ -1,0 +1,6 @@
+failed_requests 0 count
+rps 2886.43 req/s
+p50_ms 23 ms
+p90_ms 30 ms
+p95_ms 32 ms
+p99_ms 37 ms
