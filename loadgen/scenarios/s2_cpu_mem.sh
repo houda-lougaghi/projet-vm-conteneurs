@@ -6,10 +6,20 @@
 # stress-ng lancée DANS chaque instance en parallèle.
 # Métriques : idle_cpu_pct, idle_mem_used_mb, inst_mem_*_mb, load_cpu_pct, load_mem_*_mb,
 #             bogo_cpu_ops_s, bogo_vm_ops_s (par instance et moyenne).
+# Option : S2_FRESH_IDLE=1 (config.env) recrée les instances avant chaque mesure au repos.
 # =============================================================================
 s2_once() {
   local f="${RAW_DIR}/s2_${CUR_ENV}_n${CUR_LEVEL}_r${CUR_REP}_w${CUR_WARM}"
   local c m x i pids=() dur sum_c=0 sum_v=0 n_ok=0 b
+  # 0) Option S2_FRESH_IDLE=1 : instances recréées à neuf avant chaque mesure au repos.
+  #    Sans elle, les instances survivent d'un essai à l'autre : une VM ne rend pas à l'hôte la mémoire
+  #    déjà touchée par son invité (après une charge, sa mémoire « au repos » vaut presque sa taille
+  #    allouée), alors qu'un conteneur la rend. Le repos « neuf » est ce que demande le CDC (question Q1).
+  if [ "${S2_FRESH_IDLE:-0}" = 1 ]; then
+    tdown "${CUR_ENV}" || true
+    ensure_only "${CUR_ENV}" "${CUR_LEVEL}" "${CUR_PROFILE}" || { warn "S2 : recréation impossible (${CUR_ENV}, ${CUR_LEVEL})"; return 1; }
+    sleep "${S2_SETTLE_S:-30}"
+  fi
   # 1) Au repos
   sample_start "${IDLE_SAMPLE_S}" "${f}.idle.csv"; sample_wait
   read -r c m x < <(sample_stats "${f}.idle.csv")
