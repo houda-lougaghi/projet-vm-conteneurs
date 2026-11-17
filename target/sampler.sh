@@ -9,7 +9,12 @@
 set -u
 DURATION="${1:?durée en secondes}"; INTERVAL="${2:-1}"
 
-read_cpu() { awk '/^cpu /{idle=$5; total=0; for(i=2;i<=NF;i++) total+=$i; print idle, total}' /proc/stat; }
+# Champs de /proc/stat : $2 user, $3 nice, $4 system, $5 idle, $6 iowait, $7 irq, $8 softirq, $9 steal,
+# $10 guest, $11 guest_nice. Le temps « guest » (code exécuté par une VM) est DÉJÀ compris dans user :
+# l'additionner une seconde fois gonflait artificiellement l'utilisation CPU de l'hôte quand des VM
+# tournent (jusqu'à environ +80 % relatif pour une VM très active). On ne somme donc que les champs 2 à 9.
+STAT_FILE="${STAT_FILE:-/proc/stat}"
+read_cpu() { awk '/^cpu /{idle=$5; total=0; for(i=2;i<=9;i++) total+=$i; print idle, total}' "${STAT_FILE}"; }
 
 end=$((SECONDS + DURATION))
 read -r pi pt < <(read_cpu)
