@@ -14,7 +14,7 @@ s2_once() {
   # 0) Option S2_FRESH_IDLE=1 : instances recréées à neuf avant chaque mesure au repos.
   #    Sans elle, les instances survivent d'un essai à l'autre : une VM ne rend pas à l'hôte la mémoire
   #    déjà touchée par son invité (après une charge, sa mémoire « au repos » vaut presque sa taille
-  #    allouée), alors qu'un conteneur la rend. Le repos « neuf » est ce que demande le CDC (question Q1).
+  #    allouée), alors qu'un conteneur la rend.
   if [ "${S2_FRESH_IDLE:-0}" = 1 ]; then
     tdown "${CUR_ENV}" || true
     ensure_only "${CUR_ENV}" "${CUR_LEVEL}" "${CUR_PROFILE}" || { warn "S2 : recréation impossible (${CUR_ENV}, ${CUR_LEVEL})"; return 1; }
