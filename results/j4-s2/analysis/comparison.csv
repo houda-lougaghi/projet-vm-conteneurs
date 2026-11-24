@@ -1,0 +1,61 @@
+scenario,profile,level,metric,unit,vm_mean,vm_ci95,docker_mean,docker_ci95,diff_abs_docker_minus_vm,diff_pct_vs_vm,n_vm,n_docker,verdict
+s2,B,1,bogo_cpu_ops_s,ops/s,981.3349999999998,5.2240842524695115,881.485,6.418922277505785,-99.8499999999998,-10.174914784451774,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,bogo_cpu_ops_s_mean,ops/s,981.3349999999998,5.2240842524695115,881.485,6.418922277505785,-99.8499999999998,-10.174914784451774,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,bogo_vm_ops_s,ops/s,53265.746,267.41786962889717,50162.781,251.59957079917643,-3102.9649999999965,-5.825441738861588,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,bogo_vm_ops_s_mean,ops/s,53265.740000000005,267.4132369139242,50162.780000000006,251.59669402246388,-3102.959999999999,-5.825433008158712,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,idle_cpu_pct,%,0.386,0.034088806139259256,0.374,0.099528,-0.01200000000000001,-3.108808290155443,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,1,idle_mem_used_mb,MB,2644.7,5.13661635320373,2203.6,4.29449170915488,-441.0999999999999,-16.678640299466856,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_cpu_idle_s,s,8.567,0.28851807783222205,0.040999999999999995,0.002262,-8.526,-99.52141940002335,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_cpu_load_s,s,23.438,0.2834237758833934,16.597,3.4088540132126517,-6.8409999999999975,-29.18764399692806,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_mem_idle_mb,MB,537.6,4.526512635572776,10.0,0.0,-527.6,-98.13988095238095,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_mem_idle_total_mb,MB,537.6,4.526512635572776,10.0,0.0,-527.6,-98.13988095238095,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_mem_load_mb,MB,957.4,49.34548377146586,241.0,65.89804712129184,-716.4,-74.82765824106957,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,inst_mem_load_total_mb,MB,957.4,49.34548377146586,241.0,65.89804712129184,-716.4,-74.82765824106957,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,load_cpu_pct,%,11.559000000000001,0.11702556098562407,11.620999999999999,0.4092275523519891,0.06199999999999761,0.5363785794618705,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,1,load_mem_max_mb,MB,3107.6,14.386193542421147,2683.7,72.25590300840479,-423.9000000000001,-13.640751705496205,10,10,IC disjoints : différence statistiquement significative
+s2,B,1,load_mem_used_mb,MB,3057.8,29.10830647358241,2519.2,30.643955165089245,-538.6000000000004,-17.613970828700385,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,bogo_cpu_ops_s,ops/s,844.1045,2.940864588929748,793.098,28.780052795553313,-51.006500000000074,-6.042675995685376,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,bogo_cpu_ops_s_mean,ops/s,844.1045,2.9408645889297467,793.098,28.780052795553303,-51.006500000000074,-6.042675995685376,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,bogo_vm_ops_s,ops/s,48482.1185,452.16624517954085,44805.936,2173.8423010941633,-3676.1824999999953,-7.582553349024952,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,bogo_vm_ops_s_mean,ops/s,48482.1,452.1679422231874,44805.93,2173.8529640375473,-3676.1699999999983,-7.58253045969543,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,idle_cpu_pct,%,0.445,0.0443836449607285,0.531,0.3288416941995038,0.08600000000000002,19.325842696629216,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,2,idle_mem_used_mb,MB,3187.5,42.661010829561924,2206.9,23.083854999544595,-980.5999999999999,-30.763921568627445,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_cpu_idle_s,s,9.794,0.2609635283406476,0.038,0.0018469152660585153,-9.756,-99.61200735143966,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_cpu_load_s,s,24.7435,0.26083959520939315,15.114500000000001,0.030879499040625924,-9.629,-38.91527067714753,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_mem_idle_mb,MB,550.85,20.159491161485203,8.5,0.0,-542.35,-98.4569301987837,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_mem_idle_total_mb,MB,1101.7,40.318982322970406,17.0,0.0,-1084.7,-98.4569301987837,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_mem_load_mb,MB,1006.85,30.697177252802906,255.85,41.42921253282518,-751.0,-74.58906490539802,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,inst_mem_load_total_mb,MB,2013.7,61.39435450560581,511.7,82.85842506565037,-1502.0,-74.58906490539802,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,load_cpu_pct,%,23.037,0.2834488483589235,22.444000000000006,0.4314066200511998,-0.5929999999999929,-2.5741198940834003,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,2,load_mem_max_mb,MB,4114.6,66.47116208883368,3053.8,80.24331420972092,-1060.8000000000002,-25.781363923589172,10,10,IC disjoints : différence statistiquement significative
+s2,B,2,load_mem_used_mb,MB,4047.5,55.20521076311547,2808.4,57.68292192876502,-1239.1,-30.613959234095116,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,bogo_cpu_ops_s,ops/s,688.5029999999999,5.186903077887704,669.5787499999999,22.188201127123534,-18.92425000000003,-2.7486082123099,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,4,bogo_cpu_ops_s_mean,ops/s,688.5031,5.186932180406604,669.5789,22.188106704715608,-18.92420000000004,-2.7486005509633933,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,4,bogo_vm_ops_s,ops/s,40127.314249999996,79.38759702425887,38340.20650000001,1079.265664865556,-1787.1077499999883,-4.453594224786645,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,bogo_vm_ops_s_mean,ops/s,40127.270000000004,79.34212021172297,38340.21,1079.303571725902,-1787.060000000005,-4.453480139565948,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,idle_cpu_pct,%,0.659,0.025334848805548447,0.42400000000000004,0.27407044347028736,-0.235,-35.66009104704097,10,10,IC qui se recouvrent : pas de conclusion sans test complémentaire
+s2,B,4,idle_mem_used_mb,MB,4210.7,9.784875040591984,2225.3,20.805618653623352,-1985.3999999999996,-47.15130500866839,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_cpu_idle_s,s,10.723,0.1332224333436378,0.03575,0.0022383134834066468,-10.68725,-99.66660449501073,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_cpu_load_s,s,25.765500000000003,0.1311418221468656,14.84575,0.11605248628206981,-10.919750000000002,-42.381285051716446,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_mem_idle_mb,MB,537.8,2.038590679857043,7.75,0.0,-530.05,-98.55894384529564,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_mem_idle_total_mb,MB,2151.2,8.154362719428171,31.0,0.0,-2120.2,-98.55894384529564,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_mem_load_mb,MB,989.5,37.469324280002695,298.825,13.562584824527365,-690.675,-69.80040424456796,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,inst_mem_load_total_mb,MB,3958.0,149.87729712001078,1195.3,54.25033929810946,-2762.7,-69.80040424456796,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,load_cpu_pct,%,45.857000000000006,0.5059115255813015,43.885000000000005,0.5382868260881001,-1.9720000000000013,-4.300324923130604,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,load_mem_max_mb,MB,6084.6,127.06508580660541,3746.5,92.50953181699711,-2338.1000000000004,-38.42651940965717,10,10,IC disjoints : différence statistiquement significative
+s2,B,4,load_mem_used_mb,MB,5898.9,117.81642676655916,3329.6,45.28923454243845,-2569.2999999999997,-43.55557815863975,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,bogo_cpu_ops_s,ops/s,538.5063749999999,1.3338475277463455,560.191375,5.882498580099062,21.68500000000006,4.026878976130981,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,bogo_cpu_ops_s_mean,ops/s,538.5063999999999,1.3338085756239026,560.1915,5.882386118142076,21.685100000000148,4.02689735906577,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,bogo_vm_ops_s,ops/s,19365.476499999997,253.0879020141484,22277.312,814.3743796920854,2911.8355000000047,15.036219222387865,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,bogo_vm_ops_s_mean,ops/s,19365.46,253.06401524127915,22277.31,814.3737350042087,2911.850000000002,15.036306909311746,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,idle_cpu_pct,%,1.065,0.1752218781431132,0.351,0.10493610629330592,-0.714,-67.04225352112675,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,idle_mem_used_mb,MB,6345.6,66.18659930106696,2340.9,22.492592185873107,-4004.7000000000003,-63.10987140695915,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_cpu_idle_s,s,12.948875000000001,0.18916867231075157,0.035250000000000004,0.0020126292505079015,-12.913625000000001,-99.72777557895957,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_cpu_load_s,s,27.808125,0.19602697222337206,14.774875,0.185094834439842,-13.03325,-46.86849616793653,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_mem_idle_mb,MB,541.2,7.932491213200301,7.375,0.0,-533.825,-98.63728750923873,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_mem_idle_total_mb,MB,4329.6,63.459929705602406,59.0,0.0,-4270.6,-98.63728750923873,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_mem_load_mb,MB,980.7875,17.0146729532373,208.475,24.237603849751736,-772.3125,-78.74412143303213,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,inst_mem_load_total_mb,MB,7846.3,136.1173836258984,1667.8,193.90083079801389,-6178.5,-78.74412143303213,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,load_cpu_pct,%,90.271,1.0530087144577667,85.917,0.9006816414449671,-4.353999999999999,-4.823254422793587,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,load_mem_max_mb,MB,10205.6,156.20186910738298,5260.8,89.7201705669355,-4944.8,-48.45183036764129,10,10,IC disjoints : différence statistiquement significative
+s2,B,8,load_mem_used_mb,MB,9697.6,103.15877391206236,4495.3,42.276545340886116,-5202.3,-53.645231809932355,10,10,IC disjoints : différence statistiquement significative
