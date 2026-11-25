@@ -1,3 +1,0 @@
-env,index,name,profile,vcpus,ram_mb,inner_ip,access_host,http_port,iperf_port,data_dir
-docker,1,bench-ctr-1,B,1,1024,172.17.0.2,,8301,8401,/var/tmp/fio
-docker,2,bench-ctr-2,B,1,1024,172.17.0.3,,8302,8402,/var/tmp/fio
